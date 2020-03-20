@@ -5,20 +5,44 @@ nav {
     display: flex;
     justify-content: center;
 
+    @media (max-width: 500px) {
+        width: 100%;
+        font-size: 1.4em;
+        justify-content: space-between;
+        }// end query
+    }
+
     ul {
         width: 50%;
         display: flex;
         justify-content: space-around;
 
+        @media (max-width: 500px) {
+            width: @width;
+            justify-content:space-between;
+            }// end query
+        }
+
+
         li {
             margin: 0 1em;
+            width: 20%;
 
             a {
                 font-size: 1.3em;
                 text-align: center;
+                width: 100%
             }
 
             // end a
+
+            @media (max-width: 500px) {
+                margin: @margin;
+                width: 25%;
+                font-size: 1.4em;
+                justify-content: space-between;
+                }// end query
+            }
         }
 
         // end li
