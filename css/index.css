@@ -206,6 +206,13 @@ header {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
 .logo {
   width: 45%;
 }
@@ -236,6 +243,13 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -277,7 +291,13 @@ header {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.home .content-pick .destination .btn {
   width: 90%;
   background-color: #17A2B8;
   color: #FFEBCD;
@@ -285,8 +305,20 @@ header {
   line-height: 3em;
   text-align: center;
 }
-.home .content-pick .btn:hover {
+.home .content-pick .destination .btn:hover {
   background-color: #FFEBCD;
   color: #17A2B8;
   border: 2px ridge #17A2B8;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }

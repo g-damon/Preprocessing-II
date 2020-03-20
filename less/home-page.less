@@ -6,6 +6,10 @@ header {
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px dashed @navigation-border;
+
+  @media (max-width: 500px) {
+  .phone-query(column, space-around, center);
+  }// end query
 }
 
 .logo {
@@ -55,6 +59,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+      .phone-query(column, space-around, center);
+      }// end query
 
 
     .text-content {
@@ -115,11 +123,24 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media (max-width: 500px) {
+        width: @width;
+        margin: @margin;
+        }// end query
+
+        .btn {
+          .my-button();
+
+          @media (max-width: 500px) {
+            margin:@margin;
+            }// end query
+        }
     }
 
-    .btn {
-      .my-button();
-    }
+    @media (max-width: 500px) {
+      .phone-query(column, center, center);
+      }// end query
 
   }
 
