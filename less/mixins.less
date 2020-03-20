@@ -1,1 +1,16 @@
 // Mixins in here
+
+.my-button() {
+    width: @width;
+    background-color: @button-bg;
+    color: @sandy-beach;
+    border-radius: @radius;
+    line-height: 3em;
+    text-align: center;
+
+    &:hover {
+        background-color: @sandy-beach;
+        color: @button-bg;
+        border: 2px ridge @button-bg;
+    }
+}

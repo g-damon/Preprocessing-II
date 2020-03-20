@@ -169,21 +169,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  color: #212529;
-  height: 10em;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
-}
-.logo {
-  width: 45%;
-}
-.logo h1 {
-  text-align: center;
-}
 nav {
   width: 54%;
   display: flex;
@@ -211,6 +196,21 @@ nav ul li a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  color: #212529;
+  height: 10em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.logo {
+  width: 45%;
+}
+.logo h1 {
+  text-align: center;
 }
 .home .first-section {
   margin: 0 auto;
@@ -276,4 +276,17 @@ nav ul li a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  width: 90%;
+  background-color: #17A2B8;
+  color: #FFEBCD;
+  border-radius: 2.7em;
+  line-height: 3em;
+  text-align: center;
+}
+.home .content-pick .btn:hover {
+  background-color: #FFEBCD;
+  color: #17A2B8;
+  border: 2px ridge #17A2B8;
 }
