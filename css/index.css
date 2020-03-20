@@ -212,6 +212,25 @@ nav ul li a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .first-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .first-section h2 {
+  margin-top: 0.7em;
+  margin-bottom: 0.4em;
+  padding: 0.5%;
+}
+.home .first-section p {
+  margin-bottom: 0.7em;
+}
+.home .first-section img {
+  width: 100%;
+  border-radius: 2px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
