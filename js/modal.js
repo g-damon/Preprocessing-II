@@ -12,9 +12,8 @@ window.onload = function() {
 		e.preventDefault();
 		modalOverlay.classList.add('is-open');
 		modal.classList.add('is-open');
-  }
-  document.body.appendChild(modalOverlay);
-	};
+		document.body.appendChild(modalOverlay);
+	}
 
 	function closeModal(e) {
 		modalOverlay.classList.remove('is-open');
@@ -25,3 +24,5 @@ window.onload = function() {
 	modalCloseBtn.addEventListener('click', closeModal);
 	modalOverlay.addEventListener('click', closeModal);
 	modalBtn.addEventListener('click', openModal);
+
+};
