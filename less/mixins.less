@@ -15,8 +15,17 @@
     }
 }
 
+// Parametric MixIns
 
-.phone-query(@direction, @justify, @align) {
+.border(@color, @width, @type, @radius) {
+    color: @color;
+    border-width: @width;
+    border-style: @type;
+    border-radius: @radius;
+}
+
+
+.flex-query(@direction, @justify, @align) {
     flex-direction: @direction;
     justify-content: @justify;
     align-content: @align;

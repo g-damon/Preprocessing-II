@@ -9,6 +9,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href=" css/index.css" rel="stylesheet">
+  <link href=" css/modoll.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/micromodal@0.4.6/dist/micromodal.min.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -85,16 +88,51 @@
             <h4>Island Getaway</h4>
             <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
               Traveler blogger website design expedition clean excursion traveling.</p>
-            <div class="btn modal-btn">Book It</div>
+            <div role="button" class="btn modal-btn">Book It</div>
             </div>
     </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              You Need A Vacation&amp;
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <form>
+              <label>Select Destination</label>
+              <input type="radio" id="sun" name="FunInTheSun" value="FunInTheSun">
+              <label for="sun">Fun In The Sun</label><br>
+              <input type="radio" id="mountain" name="MountExcursion" value="MountExcursion">
+              <label for="mountain">Mountain Excursion</label><br>
+              <input type="radio" id="island" name="IslandGetaway" value="IslandGetaway">
+              <label for="island">Island Getaway</label>
+              <hr>
+              <label>Duration of Stay</label>
+              <select>
+                <option value="2N">3 days and 2 nights</option>
+                <option value="3N">4 days and 3 nights</option>
+                <option value="4N">5 days and 4 nights</option>
+                <option value="1W">7 days and 6 nights</option>
+                <option value="9N">10 days and 9 nights</option>
+                <option value="2W">14 days and 13 nights</option>
+              </select>
 
-    </div><!-- container -->
+            </form>
+          </main>
+          <footer class="modal__footer">
+            <button class="modal__btn modal-btn-primary"><a href="https://www.paypal.com">Pay Now</a></button>
+            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Cancel</button>
+          </footer>
+        </div>
+      </div>
     </div>
+  </div>
 
     <footer class="footer">
-      <p>Copyright Fun Bus 2018</p>
+      <p>Copyright Fun Bus 2020</p>
     </footer>
   </body>
-
 </html>

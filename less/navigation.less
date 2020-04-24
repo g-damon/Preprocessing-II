@@ -3,14 +3,19 @@
 nav {
     width: 54%;
     display: flex;
-    justify-content: center;
+    .flex-query(row, space-around, center);
+
+    @media (max-width: 750px) {
+        width: @view-width;
+        font-size: 1.4em;
+        justify-content: space-between;
+        }// end query
 
     @media (max-width: 500px) {
         width: 100%;
         font-size: 1.4em;
         justify-content: space-between;
         }// end query
-    }
 
     ul {
         width: 50%;
@@ -18,10 +23,9 @@ nav {
         justify-content: space-around;
 
         @media (max-width: 500px) {
-            width: @width;
+            width: @view-width;
             justify-content:space-between;
             }// end query
-        }
 
 
         li {
@@ -37,18 +41,11 @@ nav {
             // end a
 
             @media (max-width: 500px) {
-                margin: @margin;
+                margin: @default-margin;
                 width: 25%;
                 font-size: 1.4em;
                 justify-content: space-between;
                 }// end query
-            }
-        }
-
-        // end li
-    }
-
-    // end ul
-}
-
-// end nav
+            }// end li
+        }// end ul
+    }// end nav
