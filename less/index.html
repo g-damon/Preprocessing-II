@@ -76,19 +76,19 @@
           <h4>Fun In The Sun</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
             Traveler blogger website design expedition clean excursion travel</p>
-            <div class="btn modal-btn">Book It</div>
+            <div role="button" onclick="document.getElementById('modal-1').style.display='block'" class="btn modal__btn">Book It</div>
           </div>
         <div class="destination">
           <h4>Island Getaway</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
             Traveler blogger website design expedition clean excursion traveling.</p>
-          <div class="btn modal-btn">Book It</div>
+            <div role="button" onclick="document.getElementById('modal-1').style.display='block'" class="btn modal__btn">Book It</div>
           </div>
           <div class="destination">
             <h4>Island Getaway</h4>
             <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
               Traveler blogger website design expedition clean excursion traveling.</p>
-            <div role="button" class="btn modal-btn">Book It</div>
+              <div role="button" onclick="document.getElementById('model-1').style.display='block'" class="btn modal__btn">Book It</div>
             </div>
     </div>
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
@@ -96,19 +96,20 @@
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="modal__header">
             <h2 class="modal__title" id="modal-1-title">
-              You Need A Vacation&amp;
+              You Need A Vacation&hellip;
             </h2>
             <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
           </header>
           <main class="modal__content" id="modal-1-content">
             <form>
-              <label>Select Destination</label>
-              <input type="radio" id="sun" name="FunInTheSun" value="FunInTheSun">
-              <label for="sun">Fun In The Sun</label><br>
-              <input type="radio" id="mountain" name="MountExcursion" value="MountExcursion">
-              <label for="mountain">Mountain Excursion</label><br>
-              <input type="radio" id="island" name="IslandGetaway" value="IslandGetaway">
+              <label class="large centext">Select Destination</label><br>
+              <input type="radio" id="sun" name="FunInTheSun" value="FunInTheSun">&nbsp;
+              <label for="sun">Fun In The Sun</label>&nbsp;&nbsp;
+              <input type="radio" id="mountain" name="MountExcursion" value="MountExcursion">&nbsp;
+              <label for="mountain">Mountain Excursion</label>&nbsp;&nbsp;
+              <input type="radio" id="island" name="IslandGetaway" value="IslandGetaway">&nbsp;
               <label for="island">Island Getaway</label>
+              <br>
               <hr>
               <label>Duration of Stay</label>
               <select>
