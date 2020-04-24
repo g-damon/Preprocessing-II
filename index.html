@@ -8,7 +8,7 @@
     <title>Fun Bus Travel Agency - Solution</title>
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
-  <link href=" css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,16 +16,16 @@
   </head>
 
   <body>
-    <header>
+    <header id="#home">
       <div class="logo">
         <h1>Fun Bus</h1>
       </div>
       <nav>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#vacation">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -67,63 +67,70 @@
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
           Traveler blogger website design expedition clean excursion traveling.</p>
         <img src="img/destination.jpg" alt="Second slide">
-        </div>
+      </div>
       <div class="content-pick">
         <div class="destination">
           <h4>Fun In The Sun</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
             Traveler blogger website design expedition clean excursion travel</p>
-            <div role="button" onclick="document.getElementById('modal-1').style.display='block'" class="btn modal__btn">Book It</div>
-          </div>
+          <a role="button" href="#popup1" class="btn modal-btn">Sign Me Up</a>
+        </div>
+        <div class="destination">
+          <h4>Mountain Excursion</h4>
+          <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
+            Traveler blogger website design expedition clean excursion traveling.</p>
+          <a role="button" href="#popup1" class="btn modal-btn">Sign Me Up</a>
+        </div>
         <div class="destination">
           <h4>Island Getaway</h4>
           <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
             Traveler blogger website design expedition clean excursion traveling.</p>
-            <div role="button" onclick="document.getElementById('modal-1').style.display='block'" class="btn modal__btn">Book It</div>
-          </div>
-          <div class="destination">
-            <h4>Island Getaway</h4>
-            <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
-              Traveler blogger website design expedition clean excursion traveling.</p>
-              <a role="button" href="#popup1" class="btn modal-btn">Book It</a>
-            </div>
-    </div>
-    <div id="popup1">
-            <h2 class="modal-title" id="modal-title">
-              You Need A Vacation&hellip;
-            </h2>
-            <button class="modal-close" aria-label="Close modal" data-micromodal-close></button>
-          </header>
-          <div class="modal-content" id="modal-1-content">
-            <form>
+          <a role="button" href="#popup1" class="btn modal-btn">Sign Me Up</a>
+        </div>
+      </div>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2 class="modal-title">
+            You Need A Vacation&hellip;
+          </h2>
+          <a class="close" href="#vacation">&times;</a>
+            <form class="modal-content">
               <label class="large centext">Select Destination</label><br>
-              <input type="radio" id="sun" name="FunInTheSun" value="FunInTheSun">&nbsp;
-              <label for="sun">Fun In The Sun</label>&nbsp;&nbsp;&nbsp;
-              <input type="radio" id="mountain" name="MountExcursion" value="MountExcursion">&nbsp;
-              <label for="mountain">Mountain Excursion</label>&nbsp;&nbsp;&nbsp;
-              <input type="radio" id="island" name="IslandGetaway" value="IslandGetaway">&nbsp;
-              <label for="island">Island Getaway</label>
-              <br>
-              <hr>
-              <label>Duration of Stay</label>
-              <select>
-                <option value="2N">3 days and 2 nights</option>
-                <option value="3N">4 days and 3 nights</option>
-                <option value="4N">5 days and 4 nights</option>
-                <option value="1W">7 days and 6 nights</option>
-                <option value="9N">10 days and 9 nights</option>
-                <option value="2W">14 days and 13 nights</option>
-              </select>
-            </form>
+              <div class="thirds">
+                <input type="radio" id="vac1" name="FunInTheSun" value="375">&nbsp;
+                <label for="sun">Fun In The Sun</label>
           </div>
+          <div class="thirds">
+            <input type="radio" id="vac2" name="MountExcursion" value="450">&nbsp;
+            <label for="mountain">Mountain Excursion</label>
+          </div>
+          <div class="thirds">
+            <input type="radio" id="vac3" name="IslandGetaway" value="600">&nbsp;
+            <label for="island">Island Getaway</label>
+          </div>
+          <br>
+          <hr>
+          <label>Duration of Stay</label>
+          <select id="stay-length" name="stay-length">
+            <option value="600">3 days and 2 nights</option>
+            <option value="825">4 days and 3 nights</option>
+            <option value="950">5 days and 4 nights</option>
+            <option value="1200">7 days and 6 nights</option>
+            <option value="1450">10 days and 9 nights</option>
+            <option value="1700">14 days and 13 nights</option>
+          </select>
+          <label
+          </form>
         <div class="modal-footer">
           <button class="btn-primary"><a href="https://www.paypal.com">Pay Now</a></button>
-          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window">Cancel</button>
+          <button class="modal-btn" aria-label="Close this dialog window">Cancel</button>
         </div>
-        </section>
+        </div>
       </div>
+    </div>
     <footer class="footer">
       <p>Copyright Fun Bus 2020</p>
     </footer>
   </body>
+
 </html>
