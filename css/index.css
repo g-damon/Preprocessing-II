@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -119,8 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+  quotes: none;
 }
 table {
   border-collapse: collapse;
@@ -164,6 +163,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+  color: #ff7f50;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -175,6 +178,28 @@ img {
 .thirds {
   width: 32%;
   max-width: 33%;
+}
+@media (max-width: 500px) {
+  .thirds {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.btn,
+a.btn {
+  background-color: #17A2B8;
+  color: #FFEBCD;
+  border-radius: 0.3em;
+  line-height: 3em;
+  text-align: center;
+  padding: 0.5em 0.8em;
+}
+@media (max-width: 500px) {
+  .btn,
+  a.btn {
+    margin: 0 auto;
+    margin-bottom: 1.3em;
+  }
 }
 nav {
   width: 65%;
@@ -376,20 +401,6 @@ header {
     margin: 0 auto;
   }
 }
-.home .content-pick .destination a.btn {
-  background-color: #17A2B8;
-  color: #FFEBCD;
-  border-radius: 0.3em;
-  line-height: 3em;
-  text-align: center;
-  padding: 0.5em 0.8em;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination a.btn {
-    margin: 0 auto;
-    margin-bottom: 1.3em;
-  }
-}
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
@@ -412,16 +423,16 @@ header {
   visibility: visible;
   opacity: 1;
 }
-.home .overlay .popup {
+.home .popup {
   margin: 5em auto;
   padding: 2em;
   background: #C0C0C0;
   border-radius: 5px;
-  width: 60%;
+  width: 50%;
   position: relative;
   transition: all 2s ease-in-out;
 }
-.home .overlay .popup .close {
+.home .popup .close {
   position: absolute;
   top: 2em;
   right: 3em;
@@ -431,19 +442,19 @@ header {
   text-decoration: none;
   color: #212529;
 }
-.home .overlay .popup .close .popup h2 {
+.home .popup .close:hover {
+  color: #1e2e1f;
+}
+.home .popup .content {
+  max-height: 40%;
+  overflow: scroll;
+}
+.home .popup h2 {
   margin-top: 0;
   color: #212529;
 }
-.home .overlay .popup .close .popup .close:hover {
-  color: #1e2e1f;
-}
-.home .overlay .popup .content {
-  max-height: 80%;
-  overflow: auto;
-}
 @media screen and (max-width: 700px) {
-  .home .overlay .popup {
-    width: 85%;
+  .home .popup {
+    width: 70%;
   }
 }

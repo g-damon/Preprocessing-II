@@ -168,20 +168,6 @@ header {
         margin: 0 auto;
         }// end query
 
-        a.btn {
-    background-color: @button-bg;
-    color: @footer-bg;
-    border-radius: 0.3em;
-    line-height: 3em;
-    text-align: center;
-    padding: 0.5em 0.8em;
-
-
-          @media (max-width: 500px) {
-            margin:0 auto;
-            margin-bottom: 1.3em;
-          }// end query
-        }
       }
 
     @media (max-width: 500px) {
@@ -208,18 +194,18 @@ header {
     visibility: visible;
     opacity: 1;
   }
+}
 
   .popup {
     margin: 5em auto;
     padding: 2em;
     background: #C0C0C0;
     border-radius: 5px;
-    width: 60%;
+    width: 50%;
     position: relative;
     transition: all 2s ease-in-out;
-  }
 
-  .popup .close {
+    .close {
     position: absolute;
     top: 2em;
     right: 3em;
@@ -229,24 +215,26 @@ header {
     text-decoration: none;
     color: #212529;
 
-    .popup h2 {
+    &:hover {
+      color: @text-hover;
+    }
+
+    }
+
+    .content {
+      max-height: 40%;
+      overflow: scroll;
+    }
+
+    h2 {
       margin-top: 0;
       color: @font-color;
     }
-
-  .popup .close:hover {
-    color: @text-hover;
-  }
-  }
-  .popup .content {
-    max-height: 80%;
-    overflow: auto;
   }
 
   @media screen and (max-width: 700px){
     .popup{
-      width: 85%;
+      width: 70%;
     }
-  }
-  } // end modal
+  }// end modal
 }  // end home

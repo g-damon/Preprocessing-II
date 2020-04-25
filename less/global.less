@@ -40,6 +40,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: @link;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
@@ -52,5 +57,27 @@ img {
 
 .thirds {
   width: 32%;
-  max-width: 33%
+  max-width: 33%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.btn, a.btn {
+  background-color: @button-bg;
+  color: @footer-bg;
+  border-radius: 0.3em;
+  line-height: 3em;
+  text-align: center;
+  padding: 0.5em 0.8em;
+
+
+  @media (max-width: 500px) {
+    margin:0 auto;
+    margin-bottom: 1.3em;
+  }// end query
 }
