@@ -8,11 +8,16 @@ header {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 
-  @media (max-width: 500px) {
-    flex-direction: row;
+  @media (max-width: 750px) {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }// end query
 }
 
@@ -176,65 +181,4 @@ header {
       align-items: center;
     }  // end query
   }  // end content-pick
-
-// start modal popup
-
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
 }
-
-  .popup {
-    margin: 5em auto;
-    padding: 2em;
-    background: #C0C0C0;
-    border-radius: 5px;
-    width: 50%;
-    position: relative;
-    transition: all 2s ease-in-out;
-
-    .close {
-    position: absolute;
-    top: 2em;
-    right: 3em;
-    transition: all 200ms;
-    font-size: 3em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #212529;
-
-    &:hover {
-      color: @text-hover;
-    }
-
-    }
-
-    .content {
-      max-height: 40%;
-      overflow: scroll;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: @font-color;
-    }
-  }
-
-  @media screen and (max-width: 700px){
-    .popup{
-      width: 70%;
-    }
-  }// end modal
-}  // end home
