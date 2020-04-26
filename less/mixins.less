@@ -17,6 +17,12 @@
 
 // Parametric MixIns
 
+.animated(@name, @duration, @transition) {
+    animation-name: @name;
+    animation-duration: @duration;
+    transition: @transition;
+}
+
 .border(@color, @width, @type, @radius) {
     color: @color;
     border-width: @width;

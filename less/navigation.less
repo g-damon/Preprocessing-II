@@ -1,69 +1,51 @@
 // Navigation Styles here
 
 nav {
-    width: 75%;
-    font-size: 1.5em;
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     @media (max-width: 750px) {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-        font-size: 1.4em;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         }// end query
 
     @media (max-width: 500px) {
         width: 100%;
-        font-size: 1.3em;
-        flex-direction: column;
-        justify-content: space-evenly;
         }// end query
 
     ul {
         width: inherit;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
         @media (max-width: 500px) {
-            width: 100%;
+            width: 90%;
             justify-content: space-between;
             }// end query
 
 
-        li {
-            margin: 0 1em;
-            width: 25%;
-
-            a {
-                font-size: 1.3em;
+        li a {
+                font-size: 1.4em;
                 text-align: center;
-                width: 100%;
                 color: #212529;
 
                 @media (max-width: 750px) {
-                    font-size: 1.4em;
+                    font-size: 1.3em;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 1.2em;
                 }
 
                 &:hover {
                     color: #ff7f50;
                 }
-
-
             }
-
-            // end a
-
-            @media (max-width: 500px) {
-                margin: 0 auto;
-                width: 25%;
-                font-size: 1.4em;
-                justify-content: space-between;
-                }// end query
-            }// end li
-        }// end ul
-    }// end nav
+        }// end li
+    }
