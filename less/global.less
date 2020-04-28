@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
 }
 
 html, body {
@@ -15,23 +15,23 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+  font-size: 3.2em;
+  padding-bottom: 1em;
 }
 
 h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+  font-size: 2.5em;
+  padding-bottom: 1em;
 }
 
 p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1.5em;
+  padding-bottom: 1em;
 }
 
 img {
@@ -39,8 +39,27 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #ff7f50;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+
+.centext {
+  text-align: center;
+}
+
+.thirds {
+  width: 32%;
+  max-width: 33%;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 100%;
+  }
 }

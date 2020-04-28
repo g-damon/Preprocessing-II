@@ -1,1 +1,38 @@
 // Mixins in here
+
+.my-button() {
+    background-color: @button-bg;
+    color: @sandy-beach;
+    border-radius: @radius;
+    line-height: 3em;
+    text-align: center;
+    padding: 0.5em 0.8em;
+
+    &:hover {
+        background-color: @sandy-beach;
+        color: @button-bg;
+        border: 2px ridge @button-bg;
+    }
+}
+
+// Parametric MixIns
+
+.animated(@name, @duration, @transition) {
+    animation-name: @name;
+    animation-duration: @duration;
+    transition: @transition;
+}
+
+.border(@color, @width, @type, @radius) {
+    color: @color;
+    border-width: @width;
+    border-style: @type;
+    border-radius: @radius;
+}
+
+
+.flex-query(@direction, @justify, @align) {
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-content: @align;
+}
